@@ -11,12 +11,12 @@
             margin: 0;
             padding: 0;
             color: #333;
+            text-align: center;
         }
         header {
             background-color: #004080;
             color: #fff;
             padding: 1rem;
-            text-align: center;
         }
         h1 {
             margin: 0;
@@ -27,6 +27,8 @@
         h2 {
             border-bottom: 2px solid #004080;
             padding-bottom: 0.5rem;
+            display: inline-block;
+            margin-bottom: 1rem;
         }
         .contact-info {
             margin-bottom: 1rem;
@@ -39,7 +41,9 @@
             text-decoration: underline;
         }
         .experience, .education, .skills, .projects, .awards {
-            margin-bottom: 2rem;
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: left;
         }
         .experience-item, .education-item, .project-item, .award-item {
             margin-bottom: 1rem;
@@ -137,7 +141,12 @@
         <div class="project-item">
             <h3>Monocular Depth Prediction Implementation</h3>
             <p>University of Calgary, Calgary, Canada (2021-2023)</p>
-            <p>Developed a Python-TensorFlow implementation for <strong>monocular depth prediction</strong>, integrating PhD research findings on single-image depth estimation. This implementation introduces the Dual Convolution Vision Transformer (DCViT) for metric-scale depth prediction using unsupervised learning techniques. The project highlights advanced methodologies in depth estimation, leveraging unsupervised learning to achieve accurate metric-scale depth from single images, and builds upon extensive research conducted during my PhD, advancing the field of depth prediction technology <a href="https://github.com/gayanbrahmanage/i3D-iMAGE-Fusion" target="_blank">Project page</a>.</p>
+            <p>Developed a Python-TensorFlow implementation for <strong>monocular depth prediction</strong>, integrating PhD research findings on single-image depth estimation. This implementation introduces the Dual Convolution Vision Transformer (DCViT) for metric-scale depth prediction using unsupervised learning techniques. The project highlights advanced methodologies in depth estimation, leveraging unsupervised learning to achieve accurate metric-scale depth from single images, and builds upon extensive research conducted during my PhD, advancing the field of depth prediction technology <a href="https://github.com/gayanbrahmanage/monocular-depth-prediction" target="_blank">Project page</a>.</p>
+        </div>
+        <div class="project-item">
+            <h3>Real-Time 3D-SLAM Package Development</h3>
+            <p>University of Calgary, Calgary, Canada (2021-2023)</p>
+            <p>Developed a <strong>real-time 3D-SLAM package</strong> in C++ and GTK for Linux environments. The software processes images at 8 frames per second and includes a multi-threaded design with threads for depth prediction, local mapping, sparse bundle adjustment, and loop closing. It features a parallel loop processing structure with key-point detection, matching, and motion estimation using RANSAC and EM. The system dynamically allocates threads based on computational resources, integrating PhD research findings with existing literature for future studies <a href="https://github.com/gayanbrahmanage/3D-SLAM" target="_blank">Project page</a>.</p>
         </div>
         <div class="project-item">
             <h3>Edge-AI Experimental Platform Development</h3>
