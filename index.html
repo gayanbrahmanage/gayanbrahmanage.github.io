@@ -11,14 +11,17 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
         }
         .container {
-            max-width: 800px; /* Narrower page */
-            margin: 20px auto;
+            width: 1400px; /* Set container width to 1400px */
+            margin: 20px;
             padding: 20px;
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
         h1, h2, h3 {
             color: #004d99;
@@ -42,10 +45,14 @@
             margin-bottom: 20px;
         }
         .timeline {
-            position: absolute;
-            right: 20px;
+            position: fixed; /* Fixed position for the timeline */
+            right: 20px; /* Right alignment */
             top: 20px;
-            width: 200px;
+            width: 250px; /* Adjusted width */
+            background: #f4f4f4;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
         .timeline-item {
             margin-bottom: 20px;
@@ -70,6 +77,12 @@
             padding: 10px;
             background: #f4f4f4;
             border-radius: 5px;
+        }
+        .sub-title {
+            font-size: 16px;
+            color: #004d99;
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -113,19 +126,24 @@
             <div class="section-title">Work Experience</div>
             <div class="section-content">
                 <h3>Computer Vision Developer</h3>
-                <p><strong>2018-2024:</strong> Complex System Inc., Calgary, AB, Canada. I lead the development of select video analytics projects, leveraging advanced computer vision techniques to deliver solutions tailored to customer-specific requirements, timelines, and deliverables. My role encompasses the design and implementation of real-time software systems, ensuring that solutions are optimized for hardware constraints, performance, and robustness. For the projects under my leadership, I manage the full development lifecycle, from research and development to deployment, ensuring that each solution aligns with both the customer’s objectives and technical specifications while driving continuous improvement in efficiency, functionality, and reliability.</p>
+                <p class="sub-title">Complex System Inc., Calgary, AB, Canada</p>
+                <p><strong>2018-2024:</strong> I lead the development of select video analytics projects, leveraging advanced computer vision techniques to deliver solutions tailored to customer-specific requirements, timelines, and deliverables. My role encompasses the design and implementation of real-time software systems, ensuring that solutions are optimized for hardware constraints, performance, and robustness. For the projects under my leadership, I manage the full development lifecycle, from research and development to deployment, ensuring that each solution aligns with both the customer’s objectives and technical specifications while driving continuous improvement in efficiency, functionality, and reliability.</p>
                 
                 <h3>Research Engineer</h3>
-                <p><strong>2015:</strong> Arthur C Clarke Institute for Modern Technology, Katubedda, Sri Lanka. I was involved in the reverse engineering of a low-cost CCD tea color sorter designed to meet the specific needs of the Sri Lankan tea industry. My role involved analyzing and replicating existing systems while improving them to create an affordable solution. I was responsible for the complete mechanical and electronic design, including the development of the sorting mechanism and the integration of CCD technology for precise color detection. Additionally, I supervised the manufacturing process to ensure adherence to quality standards and efficient production of the final product.</p>
+                <p class="sub-title">Arthur C Clarke Institute for Modern Technology, Katubedda, Sri Lanka</p>
+                <p><strong>2015:</strong> Involved in the reverse engineering of a low-cost CCD tea color sorter designed to meet the specific needs of the Sri Lankan tea industry. Responsible for analyzing and replicating existing systems while improving them to create an affordable solution. Responsibilities included the complete mechanical and electronic design, including the development of the sorting mechanism and integration of CCD technology for precise color detection. Supervised the manufacturing process to ensure adherence to quality standards and efficient production of the final product.</p>
                 
                 <h3>Electronics Maintenance Engineer</h3>
-                <p><strong>2014-2015:</strong> S-Lon Lanka Private Limited, Pannala, Sri Lanka. Responsible for the electrical maintenance of the PVC pipe manufacturing machines.</p>
+                <p class="sub-title">S-Lon Lanka Private Limited, Pannala, Sri Lanka</p>
+                <p><strong>2014-2015:</strong> Responsible for the electrical maintenance of the PVC pipe manufacturing machines.</p>
                 
                 <h3>Lab Instructor</h3>
-                <p><strong>2013-2014:</strong> Faculty of Engineering, University of Moratuwa, Katubedda, Sri Lanka. Conducted laboratory classes and tutorials for undergraduate students.</p>
+                <p class="sub-title">Faculty of Engineering, University of Moratuwa, Katubedda, Sri Lanka</p>
+                <p><strong>2013-2014:</strong> Conducted laboratory classes and tutorials for undergraduate students.</p>
                 
                 <h3>Electronics Circuits and PCB Developer</h3>
-                <p><strong>2013-2014:</strong> Power Migration Partners UK Ltd (Part-time), Edinburgh, United Kingdom. Simulated and developed low-power circuits for embedded hardware and PCB development and evaluation.</p>
+                <p class="sub-title">Power Migration Partners UK Ltd (Part-time), Edinburgh, United Kingdom</p>
+                <p><strong>2013-2014:</strong> Simulated and developed low-power circuits for embedded hardware and PCB development and evaluation.</p>
             </div>
         </div>
         
@@ -133,9 +151,12 @@
             <div class="section-title">Projects</div>
             <div class="section-content">
                 <h3>Development of a Humanoid Robot</h3>
-                <p><strong>Since 2022:</strong> University of Calgary, Calgary, Canada. The development of a humanoid robot for the City of Calgary is currently underway. I am serving as the lead developer and designer of the robot hardware and software. My primary responsibilities encompass the complete mechanical and electronics design, assembly, and development of controller software. The overarching objective of this project is to design an interactive robot capable of greeting and assisting visitors to the City of Calgary premises. Ongoing collaboration with various teams at the University of Calgary and the City of Calgary aims to integrate hardware and software with natural language processing capabilities to deliver an interactive experience for the public. <a href="https://github.com/gayanbrahmanage/kella-v1.0" style="color: blue;">Project page</a>.</p>
+                <p><strong>Since 2022:</strong> University of Calgary, Calgary, Canada. The development of a humanoid robot for the City of Calgary is currently underway. I am serving as the lead developer and designer of the robot hardware and software. The project involves integrating a custom stereo camera setup, real-time software for data synchronization, and multi-view data collection to evaluate SLAM performance. The project aims to enhance interactive visitor experiences and facilitate various municipal services.</p>
                 
-                <h3>Monocular Depth Prediction</h3>
+                <h3>Real-Time 3D-SLAM Package Development</h3>
+                <p><strong>2024:</strong> Developing a real-time 3D-SLAM package using C++ and GTK for Linux environments. The package processes images at 8 frames per second and includes a multi-threaded design with separate threads for depth prediction, local mapping, sparse bundle adjustment, and loop closing. It features a parallel loop processing structure with key-point detection, matching, and motion estimation using RANSAC and EM. The system dynamically allocates threads based on computational resources and integrates findings from my PhD research with existing literature.</p>
+                
+                <h3>Monocular Depth Prediction System</h3>
                 <p><strong>2024:</strong> Developing a monocular depth prediction system using Python and TensorFlow, which incorporates research findings from my PhD. The implementation features a Dual Convolution Vision Transformer (DCViT) for predicting depth from a single image using unsupervised learning methods. The primary objective of this project is to advance depth prediction accuracy and applicability in various fields such as autonomous driving and augmented reality.</p>
                 
                 <h3>Edge-AI Experimental Platform</h3>
