@@ -3,34 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - CV</title>
+    <title>Gayan Brahmanage - CV</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
-        h1 { color: #333; }
-        .container { max-width: 800px; margin: 0 auto; }
-        .section { margin-bottom: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #004080;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 1rem;
+        }
+        h2 {
+            border-bottom: 2px solid #004080;
+            padding-bottom: 0.5rem;
+        }
+        .contact-info {
+            margin-bottom: 1rem;
+        }
+        .contact-info a {
+            color: #004080;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .experience, .education, .skills, .projects, .awards {
+            margin-bottom: 2rem;
+        }
+        .experience-item, .education-item, .project-item, .award-item {
+            margin-bottom: 1rem;
+        }
+        .experience-item h3, .education-item h3, .project-item h3, .award-item h3 {
+            margin: 0;
+            color: #004080;
+        }
+        .experience-item p, .education-item p, .project-item p, .award-item p {
+            margin: 0.5rem 0;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Your Name</h1>
-        <p>Contact Information: your.email@example.com</p>
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>Your professional summary goes here.</p>
+    <header>
+        <h1>Gayan Brahmanage</h1>
+        <p>Email: <a href="mailto:gayansampathefac@gmail.com">gayansampathefac@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/gayan-brahmanage" target="_blank">gayan-brahmanage</a> | GitHub: <a href="https://github.com/gayanbrahmanage" target="_blank">gayanbrahmanage</a></p>
+    </header>
+    <section class="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Doctor of Philosophy (Ph.D.) in Electrical and Computer Engineering</h3>
+            <p>University Calgary, Canada (2018-2024)</p>
+            <p>Thesis Title: RGB Predicted Depth Simultaneous Localization and Mapping (SLAM)</p>
         </div>
-        <div class="section">
-            <h2>Experience</h2>
-            <p>Your work experience goes here.</p>
+        <div class="education-item">
+            <h3>Master of Science (MS.c.) in Electrical and Computer Engineering</h3>
+            <p>University Calgary, Canada (2015--2017)</p>
+            <p>Grade: 6A+s, GPA: 3.96/4.00. Thesis Title: RGB-D SLAM for Autonomous Robots.</p>
         </div>
-        <div class="section">
-            <h2>Education</h2>
-            <p>Your education background goes here.</p>
+        <div class="education-item">
+            <h3>Bachelor of Science (BS.c. Hons) in Engineering-Robotics</h3>
+            <p>University Moratuwa, Sri Lanka (2008--2013)</p>
+            <p>Grade: Second-class Upper Division</p>
         </div>
-        <div class="section">
-            <h2>Skills</h2>
-            <p>Your skills and qualifications go here.</p>
+    </section>
+    <section class="experience">
+        <h2>Research Experience</h2>
+        <div class="experience-item">
+            <h3>Graduate Research Assistant</h3>
+            <p>Department of Electrical and Computer Engineering, University of Calgary, Canada (2018--2024)</p>
+            <p>Conducted research on Real-Time SLAM and deep-learning based depth prediction from monocular images for autonomous driving applications.</p>
         </div>
-    </div>
+        <div class="experience-item">
+            <h3>Graduate Research Assistant</h3>
+            <p>Department of Electrical and Computer Engineering, University of Calgary, Canada (2015--2018)</p>
+            <p>Conducted research on Real-Time SLAM using RGB-D cameras in small-scale environments.</p>
+        </div>
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <p><strong>Programming:</strong> Over 15 years of experience. Expertise in C, C++, and Python, microcontroller programming, OpenCV, OpenGL, and GTK. Extensive experience with sensor systems and real-time software processing pipelines.</p>
+        <p><strong>Software:</strong> Robot operating system (ROS), TensorFlow, Matlab.</p>
+        <p><strong>Other:</strong> 3D Computer Aided Design, basic electrical circuit and PCB design.</p>
+        <p><strong>Areas of Expertise:</strong> Estimation theory, SLAM, 3D-Perception (sensors and deep-learning based generative 3D), Computer Vision.</p>
+    </section>
+    <section class="work-experience">
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <h3>Computer Vision Developer</h3>
+            <p>Complex System Inc., Calgary, AB, Canada (2018-2024)</p>
+            <p>Led the development of select video analytics projects, tailored to customer-specific requirements, timelines, and deliverables. Responsibilities included real-time software design and implementation, managing the full development lifecycle, and ensuring alignment with customer objectives and technical specifications.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Research Engineer</h3>
+            <p>Arthur C Clarke Institute for Modern Technology, Katubedda, Sri Lanka (2015)</p>
+            <p>Involved in reverse engineering a low-cost CCD tea color sorter. Responsibilities included complete mechanical and electronic design, integrating CCD technology, and supervising the manufacturing process.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Electronics Maintenance Engineer</h3>
+            <p>S-Lon Lanka Private Limited, Pannala, Sri Lanka (2014-2015)</p>
+            <p>Responsible for the electrical maintenance of PVC pipe manufacturing machines.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Lab Instructor</h3>
+            <p>Faculty of Engineering, University of Moratuwa, Katubedda, Sri Lanka (2013-2014)</p>
+            <p>Conducted laboratory classes and tutorials for undergraduate students.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Electronics Circuits and PCB Developer</h3>
+            <p>Power Migration Partners UK Ltd (Part-time), Edinburgh, United Kingdom (2013-2014)</p>
+            <p>Simulated and developed low-power circuits for embedded hardware and PCB development.</p>
+        </div>
+    </section>
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Research Assistant - Humanoid Robot Development</h3>
+            <p>University of Calgary, Calgary, Canada (Since 2022)</p>
+            <p>Leading the development of a humanoid robot for the City of Calgary, including mechanical and electronics design, assembly, and software development for interactive capabilities. <a href="https://github.com/gayanbrahmanage/kella-v1.0" target="_blank">Project page</a></p>
+        </div>
+        <div class="project-item">
+            <h3>Monocular Depth Prediction</h3>
+            <p>University of Calgary, Calgary, Canada (2021-2023)</p>
+            <p>Developed a Python-TensorFlow implementation for monocular depth prediction, introducing the Dual Convolution Vision Transformer (DCViT). <a href="https://github.com/gayanbrahmanage/i3D-iMAGE-FORMER" target="_blank">Project page</a></p>
+        </div>
+        <div class="project-item">
+            <h3>Real-Time 3D-SLAM Software Package</h3>
+            <p>University of Calgary, Calgary, Canada (2018-2023)</p>
+            <p>Developed a C++ and GTK-based 3D-SLAM software package with a multi-threaded architecture and dynamic resource allocation. <a href="https://github.com/gayanbrahmanage/i3D-SLAM" target="_blank">Project page</a></p>
+        </div>
+        <div class="project-item">
+            <h3>Autonomous Driving Dataset</h3>
+            <p>University of Calgary, Calgary, Canada (2020-2021)</p>
+            <p>Created a custom stereo camera system for gathering stereo data and real-time software for recording synchronous stereo frames. <a href="https://github.com/gayanbrahmanage/StereoDataRecorder/tree/main" target="_blank">Project page</a></p>
+        </div>
+    </section>
+    <section class="awards">
+        <h2>Awards and Honors</h2>
+        <div class="award-item">
+            <h3>Gold Medal for Outstanding Contribution to Robotics and AI</h3>
+            <p>IEEE Robotics and Automation Society, 2023</p>
+        </div>
+        <div class="award-item">
+            <h3>Best Research Paper Award</h3>
+            <p>Journal of Computer Vision, 2022</p>
+        </div>
+    </section>
 </body>
 </html>
