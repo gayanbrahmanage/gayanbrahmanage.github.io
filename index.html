@@ -3,116 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gayan Brahmanage - CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3, h4 {
-            color: #004080;
-        }
-        h1 {
-            border-bottom: 2px solid #004080;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .contact-info, .section {
-            margin-bottom: 20px;
-        }
-        .contact-info p, .section p {
-            margin: 5px 0;
-        }
-        .section h2 {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-        .projects a, .social-links a {
-            color: #004080;
-            text-decoration: none;
-        }
-        .social-links a {
-            margin-right: 10px;
-        }
-        .awards, .references {
-            margin-top: 20px;
-        }
-    </style>
+    <title>Curriculum Vitae - Gayan Brahmanage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Gayan Brahmanage</h1>
-            <div class="contact-info">
-                <p><strong>Address:</strong> 1-2215, 28 Street SW, Calgary, AB, Canada</p>
-                <p><strong>Phone:</strong> +1 (587) 890 4422</p>
-                <p><strong>Email:</strong> <a href="mailto:gayansampathefac@gmail.com">gayansampathefac@gmail.com</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gayan-brahmanage" target="_blank">gayan-brahmanage</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/gayanbrahmanage" target="_blank">gayanbrahmanage</a></p>
+
+    <div class="letter-container">
+        <header class="header">
+            <div class="header-content">
+                <h1>Gayan Brahmanage</h1>
+                <p>Email: <a href="mailto:gayansampathefac@gmail.com">gayansampathefac@gmail.com</a> | LinkedIn: <a href="https://www.linkedin.com/in/gayan-brahmanage">gayan-brahmanage</a> | GitHub: <a href="https://github.com/gayanbrahmanage">gayanbrahmanage</a></p>
             </div>
         </header>
 
-        <section class="section">
-            <h2>Education</h2>
-            <p><strong>2018-2024:</strong> Doctor of Philosophy (Ph.D.) in Electrical and Computer Engineering, University Calgary, Canada. Thesis Title: RGB Predicted Depth Simultaneous Localization and Mapping (SLAM).</p>
-            <p><strong>2015-2017:</strong> Master of Science (MS.c.) in Electrical and Computer Engineering, University Calgary, Canada. 6A+s, GPA: 3.96/4.00. Thesis Title: RGB-D SLAM for Autonomous Robots.</p>
-            <p><strong>2008-2013:</strong> Bachelor of Science (BS.c. Hons) in Engineering-Robotics, University Moratuwa, Sri Lanka. Second-class Upper Division.</p>
-        </section>
+        <main class="main-content">
+            <section class="section">
+                <h2>Professional Summary</h2>
+                <p>Experienced computer vision and robotics engineer with over six years of expertise in real-time SLAM, 3D perception, autonomous systems, and AI-based video analytics solutions. Proven track record of delivering innovative software solutions in both research and industry settings.</p>
+            </section>
 
-        <section class="section">
-            <h2>Research Experience</h2>
-            <p><strong>2018-2024:</strong> Graduate Research Assistant, Department of Electrical and Computer Engineering, University of Calgary, Canada. Conducted research works on Real-Time SLAM and deep-learning based depth prediction from monocular (single) images for autonomous driving applications.</p>
-            <p><strong>2015-2018:</strong> Graduate Research Assistant, Department of Electrical and Computer Engineering, University of Calgary, Canada. Conducted research works on Real-Time SLAM using RGB-D cameras in small scale environments.</p>
-        </section>
+            <section class="section">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2018 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Doctor of Philosophy (PhD) in Electrical and Computer Engineering</h3>
+                            <p>University of Calgary, Canada</p>
+                            <p>Thesis: RGB Predicted Depth SLAM</p>
+                        </div>
+                    </div>
 
-        <section class="section">
-            <h2>Skills</h2>
-            <p><strong>Programming:</strong> With over 15 years of experience in computer programming. Expertise in languages such as C, C++, and Python, as well as microcontroller programming, is possessed. Proficiency in OpenCV, OpenGL, and GTK for graphical user interface design is included in the skill set. Additionally, extensive experience with a diverse range of sensor systems is held, and real-time software processing pipelines tailored for sensor-based applications have been developed.</p>
-            <p><strong>Software:</strong> Robot operating system (ROS), TensorFlow and Matlab.</p>
-            <p><strong>Other:</strong> 3D-Computer aided design, basic electrical circuit and printed circuit board design.</p>
-            <p><strong>Areas of Expertise:</strong> Estimation theory, SLAM and 3D-Perception (sensors and deep-learning based generative 3D) and Computer-vision.</p>
-        </section>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2015 - 2017</div>
+                        <div class="timeline-content">
+                            <h3>Master of Science (MSc) in Electrical and Computer Engineering</h3>
+                            <p>University of Calgary, Canada</p>
+                            <p>GPA: 3.96/4.00<br>Thesis: RGB-D SLAM for Autonomous Robots</p>
+                        </div>
+                    </div>
 
-        <section class="section">
-            <h2>Work Experience</h2>
-            <p><strong>2018-2024:</strong> Computer Vision Developer, Complex System Inc., Calgary, AB, Canada. I lead the development of select video analytics projects, leveraging advanced computer vision techniques to deliver solutions tailored to customer-specific requirements, timelines, and deliverables. My role encompasses the design and implementation of real-time software systems, ensuring that solutions are optimized for hardware constraints, performance, and robustness. For the projects under my leadership, I manage the full development lifecycle, from research and development to deployment, ensuring that each solution aligns with both the customer’s objectives and technical specifications while driving continuous improvement in efficiency, functionality, and reliability.</p>
-            <p><strong>2015:</strong> Research Engineer, Arthur C Clarke Institute for Modern Technology, Katubedda, Sri Lanka. I involved in the reverse engineering of a low-cost CCD tea color sorter designed to meet the specific needs of the Sri Lankan tea industry. My role involved analyzing and replicating existing systems while improving them to create an affordable solution. I was responsible for the complete mechanical and electronic design, including the development of the sorting mechanism and the integration of CCD technology for precise color detection. Additionally, I supervised the manufacturing process to ensure adherence to quality standards and efficient production of the final product.</p>
-            <p><strong>2014-2015:</strong> Electronics Maintenance Engineer, S-Lon Lanka Private Limited, Pannala, Sri Lanka. The responsibility for the electrical maintenance of the PVC pipe manufacturing machines was undertaken.</p>
-            <p><strong>2013-2014:</strong> Lab Instructor, Faculty of Engineering, University of Moratuwa, Katubedda, Sri Lanka. The responsibility of conducting laboratory classes and tutorials for undergraduate students was undertaken.</p>
-            <p><strong>2013-2014:</strong> Electronics circuits and PCB developer, Power Migration Partners UK Ltd (Part time), Edinburgh, United Kingdom. The responsibility of simulating and developing low-power circuits for embedded hardware and PCB development and evaluation was undertaken.</p>
-        </section>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2008 - 2013</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Science (BSc) in Engineering - Robotics</h3>
+                            <p>University of Moratuwa, Sri Lanka</p>
+                            <p>Second Class Honors</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section class="section">
-            <h2>Projects</h2>
-            <p><strong>Since 2022:</strong> Research Assistant, University of Calgary, Calgary, Canada. The <strong>development of a humanoid robot</strong> for the City of Calgary is currently underway. I am serving as the lead developer and designer of the robot hardware and software. My primary responsibilities encompass the complete mechanical and electronics design, assembly, and development of controller software. The overarching objective of this project is to design an interactive robot capable of greeting and assisting visitors to the City of Calgary premises. Ongoing collaboration with various teams at the University of Calgary and the City of Calgary aims to integrate hardware and software with natural language processing capabilities to deliver an interactive experience for the public <a href="https://github.com/gayanbrahmanage/kella-v1.0" target="_blank">Project page</a>.</p>
-            <p><strong>2021-2023:</strong> Graduate Research Assistant, University of Calgary, Calgary, Canada. Developed a Python-TensorFlow implementation for <strong>monocular depth prediction</strong>, integrating PhD research findings on single-image depth estimation. This implementation introduces the Dual Convolution Vision Transformer (DCViT) for metric-scale depth prediction using unsupervised learning techniques. The project highlights advanced methodologies in depth estimation, leveraging unsupervised learning to achieve accurate metric-scale depth from single images, and builds upon extensive research conducted during my PhD, advancing the field of depth prediction technology <a href="https://github.com/gayanbrahmanage/i3D-iMAGE-FORMER" target="_blank">Project page</a>.</p>
-            <p><strong>2018-2023:</strong> Graduate Research Assistant, University of Calgary, Calgary, Canada. Developed <strong>a real-time 3D-SLAM software package</strong> using C++ and GTK for Linux environments, integrating advanced findings from my PhD research with current literature. The software features a multi-threaded architecture with dedicated threads for depth prediction, local mapping, sparse bundle adjustment, and loop closing, operating alongside main threads for GUI visualization. It employs a parallel processing structure for loop processing, including key-point detection, matching, and motion estimation using RANSAC and EM. The system dynamically adjusts thread allocation based on computational resources, aiming for high-performance SLAM solutions in real-time environments <a href="https://github.com/gayanbrahmanage/3d-slam" target="_blank">Project page</a>.</p>
-        </section>
+            <section class="section">
+                <h2>Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Lead Developer</h3>
+                            <p>Receptionist Robot Development for the City of Calgary</p>
+                            <p>Leading the design and implementation of an autonomous receptionist robot.</p>
+                        </div>
+                    </div>
 
-        <section class="section">
-            <h2>Awards and Achievements</h2>
-            <p><strong>2023:</strong> Research Travel Award, University of Calgary.</p>
-            <p><strong>2021:</strong> Best Paper Award, International Conference on Computer Vision.</p>
-        </section>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Video Analytics Solutions Architect</h3>
+                            <p>Responsible for real-time software development and video analytics for various customer projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section class="section">
-            <h2>References</h2>
-            <p><strong>Prof. John Doe</strong>, Department of Electrical and Computer Engineering, University of Calgary, Calgary, AB, Canada. Email: <a href="mailto:johndoe@ucalgary.ca">johndoe@ucalgary.ca</a></p>
-            <p><strong>Dr. Jane Smith</strong>, Arthur C Clarke Institute for Modern Technology, Katubedda, Sri Lanka. Email: <a href="mailto:janesmith@acclimt.lk">janesmith@acclimt.lk</a></p>
-        </section>
+            <section class="section">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>SLAM and 3D Perception</li>
+                    <li>Generative AI for 3D</li>
+                    <li>Real-time C++ Development</li>
+                    <li>Computer Vision-based Software</li>
+                    <li>Autonomous Robot Design</li>
+                    <li>Depth Prediction and 3D Reconstruction</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Gayan Brahmanage | All rights reserved</p>
+        </footer>
     </div>
+
 </body>
 </html>
