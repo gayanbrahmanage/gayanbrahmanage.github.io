@@ -1,92 +1,61 @@
-/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
     color: #333;
+    padding: 20px;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.profile {
-    text-align: left;
+header h1 {
+    margin-bottom: 10px;
 }
 
-.profile h1 {
-    margin: 10px 0 5px 0;
-    font-size: 24px;
-    color: #333;
-}
-
-.profile p {
-    font-size: 16px;
-    color: #777;
-}
-
-.contact-info {
-    text-align: right;
+header p {
     font-size: 14px;
 }
 
-.contact-info p {
-    margin: 5px 0;
+header a {
+    color: #0073e6;
+    text-decoration: none;
 }
 
-section {
-    margin: 20px 0;
+.content {
+    line-height: 1.6;
 }
 
 h2 {
-    font-size: 20px;
+    margin-top: 20px;
+    color: #0073e6;
+    font-size: 18px;
     margin-bottom: 10px;
-    color: #333;
 }
 
-.job, .education {
+p {
     margin-bottom: 15px;
 }
 
-.job h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #007BFF;
-}
-
 ul {
-    list-style-type: square;
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style: disc;
     padding-left: 20px;
-}
-
-.skills, .certifications {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.skills li, .certifications li {
-    margin: 5px 0;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 10px;
-    border-top: 1px solid #ddd;
-    font-size: 14px;
-    color: #777;
 }
