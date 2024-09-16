@@ -40,9 +40,6 @@
             font-size: 18px;
             margin-bottom: 5px;
         }
-        .contact-info, .education, .research-experience, .skills, .work-experience, .projects, .awards, .references {
-            margin-bottom: 20px;
-        }
         .section {
             margin-bottom: 20px;
         }
@@ -53,9 +50,20 @@
             border-radius: 5px;
         }
         .section-content {
+            display: flex; /* Use Flexbox for two-column layout */
+            justify-content: space-between;
             padding: 10px;
             background: #f4f4f4;
             border-radius: 5px;
+        }
+        .content {
+            width: 850px; /* Main content width */
+        }
+        .timeline {
+            width: 150px; /* Timeline column width */
+            text-align: right;
+            color: #004d99;
+            font-weight: bold;
         }
         .sub-title {
             font-size: 16px;
@@ -63,129 +71,90 @@
             margin-top: 10px;
             margin-bottom: 5px;
         }
-        .date-right {
-            float: right;
-            font-weight: bold;
-            color: #004d99;
-        }
-        .clear {
-            clear: both;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Gayan Brahmanage</h1>
         <p><strong>Address:</strong> Calgary, AB, Canada</p>
-        <p><strong>Email:</strong> <a href="mailto:gayansampathefac@gmail.com">gayansampathefac@gmail.com</a></p>
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gayan-brahmanage">gayan-brahmanage</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/gayanbrahmanage">gayanbrahmanage</a></p>
 
         <div class="section education">
             <div class="section-title">Education</div>
             <div class="section-content">
-                <p><span class="date-right">2018-2024</span> Doctor of Philosophy (Ph.D.) in Electrical and Computer Engineering, University of Calgary, Canada. Thesis Title: RGB Predicted Depth Simultaneous Localization and Mapping (SLAM).</p>
-                <div class="clear"></div>
-                <p><span class="date-right">2015--2017</span> Master of Science (MSc) in Electrical and Computer Engineering, University of Calgary, Canada. GPA: 3.96/4.00. Thesis Title: RGB-D SLAM for Autonomous Robots.</p>
-                <div class="clear"></div>
-                <p><span class="date-right">2008--2013</span> Bachelor of Science (BSc Hons) in Engineering-Robotics, University of Moratuwa, Sri Lanka. Second-class Upper Division.</p>
-                <div class="clear"></div>
+                <div class="content">
+                    <p>Doctor of Philosophy (Ph.D.) in Electrical and Computer Engineering, University of Calgary, Canada. Thesis Title: RGB Predicted Depth Simultaneous Localization and Mapping (SLAM).</p>
+                </div>
+                <div class="timeline">2018-2024</div>
+            </div>
+            <div class="section-content">
+                <div class="content">
+                    <p>Master of Science (MSc) in Electrical and Computer Engineering, University of Calgary, Canada. GPA: 3.96/4.00. Thesis Title: RGB-D SLAM for Autonomous Robots.</p>
+                </div>
+                <div class="timeline">2015-2017</div>
+            </div>
+            <div class="section-content">
+                <div class="content">
+                    <p>Bachelor of Science (BSc Hons) in Engineering-Robotics, University of Moratuwa, Sri Lanka. Second-class Upper Division.</p>
+                </div>
+                <div class="timeline">2008-2013</div>
             </div>
         </div>
 
         <div class="section research-experience">
             <div class="section-title">Research Experience</div>
             <div class="section-content">
-                <p><span class="date-right">2018--2024</span> Graduate Research Assistant, Department of Electrical and Computer Engineering, University of Calgary, Canada. Conducted research works on Real-Time SLAM and deep-learning based depth prediction from monocular (single) images for autonomous driving applications.</p>
-                <div class="clear"></div>
-                <p><span class="date-right">2015--2018</span> Graduate Research Assistant, Department of Electrical and Computer Engineering, University of Calgary, Canada. Conducted research works on Real-Time SLAM using RGB-D cameras in small-scale environments.</p>
-                <div class="clear"></div>
+                <div class="content">
+                    <p>Graduate Research Assistant, Department of Electrical and Computer Engineering, University of Calgary, Canada. Conducted research works on Real-Time SLAM and deep-learning based depth prediction from monocular (single) images for autonomous driving applications.</p>
+                </div>
+                <div class="timeline">2018-2024</div>
             </div>
-        </div>
-
-        <div class="section skills">
-            <div class="section-title">Skills</div>
             <div class="section-content">
-                <p><strong>Programming:</strong> With over 15 years of experience in computer programming. Expertise in languages such as C, C++, and Python, as well as microcontroller programming. Proficiency in OpenCV, OpenGL, and GTK for graphical user interface design. Extensive experience with a diverse range of sensor systems and real-time software processing pipelines tailored for sensor-based applications.</p>
-                <p><strong>Software:</strong> Robot operating system (ROS), TensorFlow, and Matlab.</p>
-                <p><strong>Other:</strong> 3D-Computer aided design, basic electrical circuit and printed circuit board design.</p>
-                <p><strong>Areas of Expertise:</strong> Estimation theory, SLAM and 3D-Perception (sensors and deep-learning based generative 3D), and Computer Vision.</p>
+                <div class="content">
+                    <p>Graduate Research Assistant, Department of Electrical and Computer Engineering, University of Calgary, Canada. Conducted research works on Real-Time SLAM using RGB-D cameras in small-scale environments.</p>
+                </div>
+                <div class="timeline">2015-2018</div>
             </div>
         </div>
 
         <div class="section work-experience">
             <div class="section-title">Work Experience</div>
             <div class="section-content">
-                <h3>Computer Vision Developer <span class="date-right">2018-2024</span></h3>
-                <p class="sub-title">Complex System Inc., Calgary, AB, Canada</p>
-                <p>I lead the development of select video analytics projects, leveraging advanced computer vision techniques to deliver solutions tailored to customer-specific requirements, timelines, and deliverables...</p>
-                <div class="clear"></div>
+                <div class="content">
+                    <h3>Computer Vision Developer</h3>
+                    <p class="sub-title">Complex System Inc., Calgary, AB, Canada</p>
+                    <p>I lead the development of select video analytics projects, leveraging advanced computer vision techniques to deliver solutions tailored to customer-specific requirements, timelines, and deliverables...</p>
+                </div>
+                <div class="timeline">2018-2024</div>
+            </div>
 
-                <h3>Research Engineer <span class="date-right">2015</span></h3>
-                <p class="sub-title">Arthur C Clarke Institute for Modern Technology, Katubedda, Sri Lanka</p>
-                <p>Involved in the reverse engineering of a low-cost CCD tea color sorter designed to meet the specific needs of the Sri Lankan tea industry...</p>
-                <div class="clear"></div>
-
-                <h3>Electronics Maintenance Engineer <span class="date-right">2014-2015</span></h3>
-                <p class="sub-title">S-Lon Lanka Private Limited, Pannala, Sri Lanka</p>
-                <p>Responsible for the electrical maintenance of the PVC pipe manufacturing machines.</p>
-                <div class="clear"></div>
-
-                <h3>Lab Instructor <span class="date-right">2013-2014</span></h3>
-                <p class="sub-title">Faculty of Engineering, University of Moratuwa, Katubedda, Sri Lanka</p>
-                <p>Conducted laboratory classes and tutorials for undergraduate students.</p>
-                <div class="clear"></div>
-
-                <h3>Electronics Circuits and PCB Developer <span class="date-right">2013-2014</span></h3>
-                <p class="sub-title">Power Migration Partners UK Ltd (Part-time), Edinburgh, United Kingdom</p>
-                <p>Simulated and developed low-power circuits for embedded hardware and PCB development and evaluation.</p>
-                <div class="clear"></div>
+            <div class="section-content">
+                <div class="content">
+                    <h3>Research Engineer</h3>
+                    <p class="sub-title">Arthur C Clarke Institute for Modern Technology, Katubedda, Sri Lanka</p>
+                    <p>Involved in the reverse engineering of a low-cost CCD tea color sorter designed to meet the specific needs of the Sri Lankan tea industry...</p>
+                </div>
+                <div class="timeline">2015</div>
             </div>
         </div>
 
         <div class="section projects">
             <div class="section-title">Projects</div>
             <div class="section-content">
-                <h3>Development of a Humanoid Robot <span class="date-right">Since 2022</span></h3>
-                <p>University of Calgary, Calgary, Canada. The development of a humanoid robot for the City of Calgary is currently underway...</p>
-                <div class="clear"></div>
-
-                <h3>Receptionist Robot Development for City of Calgary - R&D <span class="date-right">2024</span></h3>
-                <p>The project aims to create a robot for the City of Calgary that will act as an interactive receptionist...</p>
-                <div class="clear"></div>
-
-                <h3>Real-Time 3D-SLAM Package Development <span class="date-right">2024</span></h3>
-                <p>Developing a real-time 3D-SLAM package using C++ and GTK for Linux environments. The package processes images at 8 frames per second...</p>
-                <div class="clear"></div>
-
-                <h3>Monocular Depth Prediction System <span class="date-right">2024</span></h3>
-                <p>Developing a monocular depth prediction system using Python and TensorFlow. The implementation features a Dual Convolution Vision Transformer (DCViT)...</p>
-                <div class="clear"></div>
-
-                <h3>Edge-AI Experimental Platform <span class="date-right">2023</span></h3>
-                <p>Designed and developed an experimental Edge-AI platform consisting of a hexacopter drone equipped with edge-AI processing hardware...</p>
-                <div class="clear"></div>
-
-                <h3>GUI-Based Drone Control Tool <span class="date-right">2024</span></h3>
-                <p>Developed a graphical user interface (GUI) software tool to control an off-the-shelf mini drone for lab experiments...</p>
-                <div class="clear"></div>
+                <div class="content">
+                    <h3>Development of a Humanoid Robot</h3>
+                    <p>University of Calgary, Calgary, Canada. The development of a humanoid robot for the City of Calgary is currently underway...</p>
+                </div>
+                <div class="timeline">Since 2022</div>
             </div>
-        </div>
 
-        <div class="section awards">
-            <div class="section-title">Awards and Honors</div>
             <div class="section-content">
-                <p><span class="date-right">2023</span> IEEE ).</p>
-                <div class="clear"></div>
-                <p><span class="date-right">2018</span> University of Calgary.</p>
-                <div class="clear"></div>
-            </div>
-        </div>
-
-        <div class="section references">
-            <div class="section-title">References</div>
-            <div class="section-content">
-                <p>Available upon request.</p>
+                <div class="content">
+                    <h3>Receptionist Robot Development for City of Calgary - R&D</h3>
+                    <p>The project aims to create a robot for the City of Calgary that will act as an interactive receptionist...</p>
+                </div>
+                <div class="timeline">2024</div>
             </div>
         </div>
     </div>
