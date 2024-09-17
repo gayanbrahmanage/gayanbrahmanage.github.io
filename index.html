@@ -79,31 +79,34 @@
         }
 
         .section-title {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        .section-content.full-width {
-            width: 1000px; /* Make full width */
+            color: #2c3e50; /* Darker color for the section title */
             margin-bottom: 20px;
-            display: block; /* No timeline, remove right column behavior */
+            border-bottom: 2px solid #3498db; /* Underline for the section title */
+            padding-bottom: 10px;
         }
 
-        .section-content .content {
-            margin-bottom: 10px;
+        .skill-block {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9; /* Light background for skill blocks */
+            border: 1px solid #ddd; /* Subtle border */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
         }
 
-        .section-content h3 {
-            font-size: 18px;
+        .skill-title {
+            font-size: 20px;
             font-weight: bold;
-            margin-bottom: 5px;
+            color: #34495e; /* Darker shade for skill titles */
+            margin-bottom: 8px;
         }
 
-        .section-content p {
+        .skill-block p {
             font-size: 16px;
+            line-height: 1.6; /* Increased line height for readability */
             margin-top: 0;
-            margin-bottom: 10px;
         }
 
 
@@ -164,34 +167,27 @@
         <div class="section skills">
             <div class="section-title">Skills</div>
 
-            <div class="section-content full-width">
-                <div class="content">
-                    <h3>Programming</h3>
-                    <p>With over 15 years of experience in computer programming. Expertise in languages such as C, C++, and Python, as well as microcontroller programming, is possessed. Proficiency in OpenCV, OpenGL, and GTK for graphical user interface design is included in the skill set. Additionally, extensive experience with a diverse range of sensor systems is held, and real-time software processing pipelines tailored for sensor-based applications have been developed.</p>
-                </div>
+            <div class="skill-block">
+                <div class="skill-title">Programming</div>
+                <p>With over 15 years of experience in computer programming. Expertise in languages such as C, C++, and Python, as well as microcontroller programming. Proficient in OpenCV, OpenGL, and GTK for graphical user interface design. Additionally, have extensive experience with sensor systems and developing real-time software processing pipelines tailored for sensor-based applications.</p>
             </div>
 
-            <div class="section-content full-width">
-                <div class="content">
-                    <h3>Software</h3>
-                    <p>Robot Operating System (ROS), TensorFlow, and Matlab.</p>
-                </div>
+            <div class="skill-block">
+                <div class="skill-title">Software</div>
+                <p>Proficient in Robot Operating System (ROS), TensorFlow, and Matlab.</p>
             </div>
 
-            <div class="section-content full-width">
-                <div class="content">
-                    <h3>Other</h3>
-                    <p>3D-Computer Aided Design, basic electrical circuit, and printed circuit board design.</p>
-                </div>
+            <div class="skill-block">
+                <div class="skill-title">Other</div>
+                <p>Skilled in 3D-Computer Aided Design, basic electrical circuit, and printed circuit board design.</p>
             </div>
 
-            <div class="section-content full-width">
-                <div class="content">
-                    <h3>Areas of Expertise</h3>
-                    <p>Estimation theory, SLAM, and 3D-Perception (sensors and deep-learning based generative 3D) and Computer Vision.</p>
-                </div>
+            <div class="skill-block">
+                <div class="skill-title">Areas of Expertise</div>
+                <p>Deep knowledge in Estimation theory, SLAM, 3D-Perception (sensors and deep-learning-based generative 3D), and Computer Vision.</p>
             </div>
         </div>
+
 
 
         <div class="section work-experience">
